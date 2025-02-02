@@ -194,7 +194,7 @@
         <button class="gift-button" onclick="showError()"> Son môi bling bling</button>
         <button class="gift-button" onclick="showError()">Serum mịn màng làn da</button>
         <button class="gift-button" onclick="showError()">Kẹo siêu ngon đêy</button>
-        <button class="gift-button" onclick="showConfettiAndPage('page3')">Anh</button>
+        <button class="gift-button" onclick="showConfettiAndPage('page3')">Anh =)))</button>
         <p class="error-message" id="error">ẹeee sai rồi chọn lại ikk 😛</p>
     </div>
 
@@ -246,16 +246,16 @@
             const colors = ["#ffcc00", "#ff6f61", "#6b5b95", "#88b04b", "#ff6f61", "#92a8d1", "#955251"];
 
             // Tạo hiệu ứng confetti
-            for (let i = 0; i < 150; i++) {
+            for (let i = 0; i < 120; i++) {
                 const confetti = document.createElement("div");
                 confetti.className = "confetti";
-                confetti.style.left = `${Math.random() * 100}vw`;
+                confetti.style.left = `${Math.random() * 90}vw`;
                 confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
                 confetti.style.animationDuration = `${Math.random() * 3 + 2}s`;
                 document.body.appendChild(confetti);
             }
 
-            // Chuyển trang sau 1 giây
+            // Chuyển trang sau 0.1 giây
             setTimeout(() => {
                 showPage(pageId);
             }, 1000);
